@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRISHA MAY ESQUILLO</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+	<section id="home">
+		<!-- NAVIGATION BAR-->
+		<nav class="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#project">Projects</a></li>
+			</ul>
+		</nav>
+
+		<!-- NAVIGATION BAR-->
+
+		<!-- HOME -->
+		<div class="hme">
+			<div class="main">
+			<h1>HELLO,</h1>
+			<h1>I'm TRISHA MAY O. ESQUILLO</h1>
+			<!-- <p>I am an IT Student Major in System Development</p> -->
+			<button class="seebtn"><a href="#about">See More</a></button>
+		</div>
+		</div>
+		<!-- HOME -->
+	</section>
+
+	<!-- ABOUT -->
+	<section id="about">
+		<div>
+			<h1 class="headings">ABOUT ME</h1>
+		</div>
+		<div class="pic">
+			
+			<img src="frontpics/ako.jpg" alt="Me">
+			<div class="intro">
+				<h2>Trisha May O. Esquillo</h2>
+				<p class="desc">I am Trisha May O. Esquillo. I am 21 years old. I live in San Isidro Lupao, Nueva Ecija. I am currently 4th year college in Central Luzon State University in Science City of Muñoz, Nueva Ecija with the course of Bachelor of Science in Information Technology Major in System Development. <br><br>
+
+				If I have given a chance someday in the future, I want to be a Web Developer or Mobile App Developer. I know I still don't have a skill that I can show but learning things is never too late. So, I will do all the things to learn it all and to make my dream come true.
+				</p>
+
+			</div>
+		</div>	
+
+	</section>
+	<!-- ABOUT -->
+
+	<!-- PROJECTS -->
+	<section id="project">
+		<div class="projects">
+		<div>
+			<h1 class="headings">PROJECTS</h1>
+		</div>
+		<div class="row">
+			
+<!-- 			PROJECT 1 -->
+			<div class="box">
+			<div class="card">
+        	
+        	<div class="image">
+           	 	<img src="frontpics/android.jpg" class="img" width="350" height="480">
+        	</div>
+        	
+        	<div class="content">
+            <div class="title">InstaMenu</div>
+            <div class="subtitle">November 2020</div>
+            
+            <div class="bottom">
+                <p>This project is an Android Application that we made using Android Studio. It was our final Project in Software Engineering in Laboratory. We called it InstaMenu beacuse it is for the Restaurant Owners, this app will work as an ordering and assistant system.</p>
+                <button class="viewMore"><a href="projects/android/App.html"> View More</a></button>
+            </div>
+        </div> 
+		</div>
+		</div>
+
+
+<!-- 			PROJECT 2 -->
+			<div class="box">
+			<div class="card1">
+        	
+        	<div class="image1">
+           	 	<img src="frontpics/front.PNG" class="img1" width="350" height="480">
+        	</div>
+        	
+        	<div class="content1">
+            <div class="title1">Zoombie Shooter</div>
+            <div class="subtitle1">December 2020</div>
+            
+            <div class="bottom1">
+                <p>This Game was made using Python. It was our final project in Integrative Programming and Technology in Laboratory. The name of this game is Zombie Shooter.</p>
+                <button class="viewMore"><a href="projects/game/game.html"> View More</a></button>
+            </div>
+        </div> 
+		</div>
+		</div>
+
+<!-- 			PROJECT 3 -->
+		<div class="box">
+			<div class="card2">
+        	
+        	<div class="image2">
+           	 	<img src="frontpics/front0.png" width="350" class="img2" height="480">
+        	</div>
+        	
+        	<div class="content2">
+            <div class="title2">goMovie</div>
+            <div class="subtitle2">October 2021</div>
+            
+            <div class="bottom2">
+                <p>This Web app was made using PHP. It was our Practical Exam in Advance Web Development in Laboratory. It was named goMovie because this Web app is Movie website which people can buy a movie to watch and also they can buy snacks.</p>
+                <button class="viewMore"><a href="https://go-movie1.000webhostapp.com/User%20Side/index.php">See Website</a></button>
+            </div>
+        </div> 
+		</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+	<script>
+        $('.card').hover(function() {
+            if ($(this).hasClass("active")) {
+                $('.card .bottom').slideUp(function() {
+                    $('.card').removeClass("active");
+                });
+            } else {
+                $('.card').addClass("active");
+                $('.card .bottom').stop().slideDown();
+            }
+        });
+
+
+
+        $('.card1').hover(function() {
+            if ($(this).hasClass("active1")) {
+                $('.card1 .bottom1').slideUp(function() {
+                    $('.card1').removeClass("active1");
+                });
+            } else {
+                $('.card1').addClass("active1");
+                $('.card1 .bottom1').stop().slideDown();
+            }
+        });
+
+
+        $('.card2').hover(function() {
+            if ($(this).hasClass("active2")) {
+                $('.card2 .bottom2').slideUp(function() {
+                    $('.card2').removeClass("active2");
+                });
+            } else {
+                $('.card2').addClass("active2");
+                $('.card2 .bottom2').stop().slideDown();
+            }
+        });
+    </script>
+		<!-- PROJECTS -->
+
+
+<section class="footer">
+	
+	<div class="social">
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.facebook.com/esquillo3shhh"><i class="fab fa-facebook-f"></i></a>
+		<a href="#"><i class="fab fa-youtube"></i></a>
+	</div>
+
+	<ul class="list">
+		<li>
+			<a href="#home">Home</a>
+		</li>
+
+		<li>
+			<a href="#about">About Me</a>
+		</li>
+
+		<li>
+			<a href="#project">Projects</a>
+		</li>
+	</ul>
+	<p class="copyright">Trisha May Esquillo @ 2021</p>
+
+</section>
+</body>
+
+</html>
